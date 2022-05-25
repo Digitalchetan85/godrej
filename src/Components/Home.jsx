@@ -4,7 +4,7 @@ import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 import TopMenubar from "./Includes/TopMenubar";
 import Slide from "../Images/main-slide.png";
 import Location from "../Images/locationmap.webp";
-import Logo from"../Images/logo.png";
+import Logo from "../Images/logo.png";
 import Image1 from "../Images/image1.png";
 import Image2 from "../Images/image2.png";
 import Image3 from "../Images/image3.png";
@@ -12,18 +12,15 @@ import Image4 from "../Images/image4.png";
 import Footer from "./Includes/Footer";
 
 const Home = () => {
-
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   const images = [
-
     { id: 1, imgName: Image1, alt: "", tag: "1" },
     { id: 2, imgName: Image2, alt: "", tag: "2" },
     { id: 3, imgName: Image3, alt: "", tag: "3" },
     { id: 4, imgName: Image4, alt: "", tag: "4" },
-
   ];
   return (
     <>
@@ -31,9 +28,75 @@ const Home = () => {
         <Row>
           <Col md={9} className="ps-0 pe-0 bg-light">
             <TopMenubar />
-            <div className="text-center">
-              <Image src={Slide} alt="" className="img-fluid"></Image>
+            <section id="slider" className="position-relative">
+              <div className="text-center">
+                <Image src={Slide} alt="" className="img-fluid"></Image>
+              </div>
+              <div id="booking" className="py-5 py-md-5 position-absolute bottom-0 start-0">
+              <div className="bg-white">
+                <Container>
+                  <Row className="justify-content-center">
+                    <Col md={12}>
+                      <h3 className="bg-success text-white text-center">
+                        Booking Open
+                      </h3>
+                      <h3 className="text-center mb-0 py-2 text-uppercase">
+                        Godrej Royale Woods
+                      </h3>
+                      <p className="text-muted text-center">
+                        At Bangalore By Godrej Properties
+                      </p>
+                      <Row className="justify-content-center bg-light py-2">
+                        <Col md={4}>
+                          <p>Land Parcel</p>
+                          <p>
+                            <strong>13 Acres</strong>
+                          </p>
+                        </Col>
+                        <Col md={4}>
+                          <p>Floors</p>
+                          <p>
+                            <strong>G + 16 Storeys</strong>
+                          </p>
+                        </Col>
+                        <Col md={4}>
+                          <p>Possession</p>
+                          <p>
+                            <strong>Oct 2025</strong>
+                          </p>
+                        </Col>
+                      </Row>
+                      <Row className="justify-content-center bg-light">
+                        <h4 className="text-center bg-success text-white">
+                          Excellent Locality & Connectivity
+                        </h4>
+                        <Col md={6}>
+                          <h5 className="text-center">IKEA Furnished Homes</h5>
+                        </Col>
+                      </Row>
+
+                      <h6 className="text-center ">
+                        Luxurious 2 & 3 BHK Starts From
+                      </h6>
+                      <h2 className="text-center">44.99 Lacs Onwards</h2>
+                      <div className="text-center">
+                        <Button
+                          variant="primary"
+                          size="sm"
+                          onClick={handleShow}
+                          className="my-3 custom-button text-center"
+                        >
+                          <i className="fa fa-spinner fa-flip fa-download"></i>{" "}
+                          Download Brochure
+                        </Button>
+                      </div>
+                    </Col>
+                  </Row>
+                </Container>
+              </div>
             </div>
+            </section>
+            
             <section id="welcome" className="py-5 py-md-5 bg-white">
               <Container>
                 <Row className="justify-content-center">
@@ -272,9 +335,15 @@ const Home = () => {
                   <h2 className="text-success py-3">Virtual Tour Request</h2>
                   <Col md={8}>
                     <div className="text-center">
-                    <iframe width="100%" height="450" src="https://www.youtube.com/embed/dEq5fbV7qJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                      <iframe
+                        width="100%"
+                        height="450"
+                        src="https://www.youtube.com/embed/dEq5fbV7qJM"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      ></iframe>
                     </div>
-
                   </Col>
                 </Row>
               </Container>
@@ -283,11 +352,22 @@ const Home = () => {
               <Container>
                 <Row className="justify-content-center">
                   <div className="text-center">
-                  <Image src={Logo} className="img-fluid" alt="logo"></Image>
+                    <Image src={Logo} className="img-fluid" alt="logo"></Image>
                   </div>
                   <h2 className="text-success py-3">About Godrej Properties</h2>
                   <Col md={10}>
-                          <p>Godrej Group established in 1897, began their journey as a part of India’s Swadeshi movement i.e. the original ‘Make in India’ movement. The group comprises various businesses that include real estate, home supplies & security. It’s ranked as the 2nd most trusted Indian brand with annual revenue of 5 billion USD, and 1.1 billion customers worldwide. Over the years, Godrej has been honored with more than 200 awards and recognized as the National Brand Leader by the Track2Realty BrandXReport 2019-20 and the Global Sector Leader by GRESB 2020.</p>
+                    <p>
+                      Godrej Group established in 1897, began their journey as a
+                      part of India’s Swadeshi movement i.e. the original ‘Make
+                      in India’ movement. The group comprises various businesses
+                      that include real estate, home supplies & security. It’s
+                      ranked as the 2nd most trusted Indian brand with annual
+                      revenue of 5 billion USD, and 1.1 billion customers
+                      worldwide. Over the years, Godrej has been honored with
+                      more than 200 awards and recognized as the National Brand
+                      Leader by the Track2Realty BrandXReport 2019-20 and the
+                      Global Sector Leader by GRESB 2020.
+                    </p>
                   </Col>
                 </Row>
               </Container>
