@@ -10,29 +10,16 @@ const TopMenubar = () => {
           <Navbar.Brand href="/"><Image src={Logo} className="img-fluid" alt="logo"></Image></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto ms-auto">
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
-              <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
+            <Nav className="ms-auto me-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="#price">Price</Nav.Link>
+              <Nav.Link href="#site">Site & Floor Plan</Nav.Link>  
+              <Nav.Link href="#amenitiies">Amenities</Nav.Link>  
+              <Nav.Link href="#location">Location</Nav.Link>   
+              <Nav.Link href="#virtual-tour">Virtual Tour</Nav.Link>  
+              <Nav.Link href="#brochure">Brochure</Nav.Link>              
             </Nav>
-            <Nav>
-              <Nav.Link href="#deets">More deets</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
-                Dank memes
-              </Nav.Link>
-            </Nav>
+            
           </Navbar.Collapse>
         </Container>
       </Navbar>

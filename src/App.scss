@@ -22,3 +22,15 @@ $black-color: #000;
 $tertiary-color: #9D9E9E;
 $dark-color: #001524;
 $info-color: #B36326;
+
+#responsive-navbar-nav{
+  .nav-link{
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+    float: right;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
