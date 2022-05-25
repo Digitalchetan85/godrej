@@ -1,0 +1,24 @@
+/* The following block can be included in a custom.scss */
+
+/* make the customizations */
+$theme-colors: (
+  "primary": #09659E,
+  "secondary": #6c757d,
+  "dark": #343a40,
+  "success": #28a745,
+  "info": #B36326,
+  "warning": #B36326,
+  "danger": #dc3545,
+  "light": #f8f9fa,
+);
+
+/* import bootstrap to set changes */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$primary-color: #09659E;
+$secondary-color: #E1D1AD;
+$white-color: white;
+$black-color: #000;
+$tertiary-color: #9D9E9E;
+$dark-color: #001524;
+$info-color: #B36326;
