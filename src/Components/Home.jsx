@@ -150,7 +150,7 @@ const Home = () => {
                       bordered
                       hover
                     >
-                      <thead>
+                      <thead className="text-center">
                         <tr>
                           <th>Type</th>
                           <th>Super Built-up Area</th>
